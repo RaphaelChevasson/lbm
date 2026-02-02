@@ -3,7 +3,7 @@ import vec
 import color
 import gl
 
-import color_conversions // hls(r,g,b)->color
+import color_conversions // hls(h,l,s)->color
 import float_formatting // fmt(float)->string and fmt(float2)->string
 
 gl.window("Latice Boltzman Fluid Sim", 1280, 720)
@@ -186,3 +186,4 @@ while gl.frame() and not gl.button("escape"):
             gl.translate ij:
                 gl.unit_square()
     status_bar(res, status_bar_res, mouse_grid_pos)
+
